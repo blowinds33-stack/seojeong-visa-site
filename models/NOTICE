@@ -1,0 +1,3 @@
+PP-OCRv5_mobile_det, korean_PP-OCRv5_mobile_rec — PaddleOCR (PaddlePaddle), Apache License 2.0.
+https://github.com/PaddlePaddle/PaddleOCR
+Paddle 추론 모델을 paddle2onnx 2.1.0(opset 14)으로 ONNX 변환. korean_dict.json은 인식 모델 설정(inference.yml)의 글자 사전.

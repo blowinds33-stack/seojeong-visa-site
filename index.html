@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>비자서류검증</title>
+<!-- GitHub Pages는 응답 헤더를 바꿀 수 없어, 서비스 워커로 교차 출처 격리를 켜 다중 스레드 OCR을 쓴다 -->
+<script src="coi-serviceworker.min.js"></script>
+<script src="vendor/xlsx.full.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#/">비자서류검증</a>
+  <span class="crumb">SJD 관리자 / 비자 / 비자서류검증</span>
+</header>
+<main id="app"><p class="muted">불러오는 중…</p></main>
+<footer class="foot">
+  <span>자료는 이 브라우저 안에만 저장됩니다(다른 PC·브라우저와 공유되지 않음).</span>
+  <span>서류 판독: PaddleOCR(브라우저 안에서 실행, 외부 전송 없음)</span>
+  <span id="threads"></span><span id="usage"></span>
+</footer>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
